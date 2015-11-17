@@ -17,11 +17,14 @@
 注解：1.DocumentRoot  是你代码目录
       2.ServerName  是起一个名字 用来访问你的项目代码
       3.Directory   你代码的目录
-      4.ProxyPass 代理路径  访问你项目接口的 地址
+      4.ProxyPass 代理路径  你要指向服务器的地址
       5.ProxyPassReverse  反向代理  与你代理路径一样
+      如果服务器与apache服务器在同一台电脑上，则只需更改端口号为服务器的端口号即可；
+      
       
   在打开 windows  C:\Windows\System32\drivers\etc   打开该路径下的hosts文件  添加一段代码
-  例如  127.0.0.1       xx.local  该名字与你访问 代码的名字一样
+  如果服务器与apache服务器在不同电脑上时，需要修改127.0.0.1为服务器的IP地址，端口号为服务器的端口号。
+  例如  127.0.0.1       xx.local  
   配置完这些 打开浏览器 访问一下你的项目   如http://xx.local
   完成以上这些  如果访问 还是有一些问题的话 
   再打开Xmapp   D:\xampp\apache\conf  下面的httpd.conf  文件  将该文件下的
